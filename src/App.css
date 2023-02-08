@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
+/*components app*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.background {
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  background-image: url(./images/23626-Age-Of-Empires-IV-4k-Ultra-HD-Wallpaper.png);
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #blurElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .blur {
+    filter: blur(5px);
   }
+  /*buttons*/
+  .boton1, .boton2, .boton3{
+    position: absolute;
+  }
+
+  .boton1{
+    left: 25%;
+    top: 34%;
+  }
+
+  .boton2{
+    left: 45%;
+    top: 12%;
+  }
+
+  .boton3{
+    right: 27%;
+    top: 19%;
+  }
+
+  #closeBtn, #closeBtn2, #closeBtn3{
+    display: none;
+  }
+
+  .close{
+    color: white;
+    position: absolute;
+    right: 8.5%;
+    top: 7.9%;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .close:hover{
+    color: white;
+    background-color: red;
+  }
+
+  .close:focus{
+    outline: none;
+  }
+
+  button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+  button:hover {
+  background-color: #371d58;
+  cursor: pointer;
+}
+
+  button:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+
+  @media only screen and (max-width: 768px){
+    .moviles{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }  
+  }
+
+
